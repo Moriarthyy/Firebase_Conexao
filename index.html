@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação Firebase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    
+</head>
+<body class="centralize">
+    <form>
+        <div>
+            <div><label>Email</label></div>
+            <input type="email" class="texts" name="" id="email" onchange="ValidateFields()" placeholder="seuEmail@gmail.com">
+        </div>
+        <div>
+            <div><label>Senha</label></div>
+            <input type="password" class="texts" name="" id="password" onchange="ValidateFields()" placeholder="senha">
+        </div>
+        <div>
+            <button class="btns" disabled="true" id="recover-password" onclick="recoverPassword()">Recuperar Senha</button>
+        </div>
+        <div>
+            <button type="button" class="btns" id="login-button" disabled="true" onclick="login()">Entrar</button>
+        </div>
+        <div>
+            <button type="button" class="btns" onclick="register()">Registrar</button>
+        </div>
+        <div class="centralize">
+            <button type="button" onclick="loginWithGoogle()" class="login-button">
+                <img class="google-icon" src="https://www.svgrepo.com/show/475656/google-color.svg" height="25px" loading="lazy" alt="google logo">
+                <span>Login with Google</span>
+            </button>
+        </div>
+    </form>
+</body>
+    
+
+<script src="script.js"></script>
+<script src="validations.js"></script>
+<script src="loading.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+<script src="firebase.js"></script>
+<script src="google.js"></script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body class="centralize">
+    <form>
+    <div> 
+        <div><label>Email</label></div>
+        <input type="email" name=""  class="texts" id="email" onchange="toggleRegisterButton()" placeholder="seu@email.com">
+    </div>    
+    <div>
+        <div><label>Senha</label></div>
+        <input type="password" class="texts" name="" id="password" onchange="toggleRegisterButton()" placeholder="Senha">
+    </div>
+        
+    <div>
+        <div><label>Confirmar Senha</label></div>
+        <input type="password" class="texts" name="" id="confirmPassword" onchange="toggleRegisterButton()"  placeholder="Confirme sua senha">
+    </div>
+    
+    <div>
+        <input type="button" value="Registrar" disabled="true" onclick="register()" id="register-button" class="btns">
+    </div>
+
+    <div>
+        <input type="button" onclick="loginButton()" value="login" class="btns">
+    </div>
+    <div class="centralize">
+        <button type="button" onclick="loginWithGoogle()" class="login-button">
+            <img class="google-icon" src="https://www.svgrepo.com/show/475656/google-color.svg" height="25px" loading="lazy" alt="google logo">
+            <span>Sign in with Google</span>
+        </button>
+    </div>
+        
+    </form>
+</body>
+
+<script src="register.js"></script> 
+<script src= "../../validations.js"></script>
+<script src="../../loading.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+<script src="../../firebase.js"></script>
+<script src="../../google.js"></script>
+</html>
