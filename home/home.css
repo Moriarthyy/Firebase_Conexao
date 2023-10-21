@@ -110,6 +110,32 @@ body{
       top: -7px;
     }
   }
-  #center {
-    justify-content: center;
-  }
+#center {
+  justify-content: center;
+}
+#restaurantes {
+  background-color: rgb(152, 160, 160);
+  text-align: center;
+}
+p {
+  margin: 4px 0; 
+}
+.outline {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.outline.danger {
+  color: red;
+  border-color: red;
+  background-color: white;
+}
+button.danger {
+  width: auto;
+  float: right;
+  display: none;
+}
+ul li:hover button.danger{
+  display: block;
+}
+    

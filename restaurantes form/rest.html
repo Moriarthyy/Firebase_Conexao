@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Rest</title>
+    <link rel="stylesheet" href="rest.css">
+    <link rel="stylesheet" href="../global.css">
+</head>
+<body class="centralize">
+    <form>
+         <div> 
+            <div><label>Nome do restaurante</label></div>
+            <input type="text" name="restname"  class="texts" id="nome" placeholder="Nome do Restaurante">
+        </div>    
+        <div>
+            <div><label>Bairro</label></div>
+            <input type="text" class="texts" name="" id="bairro" placeholder="Bairro">
+        </div>
+        <p>Self Service? : <input type="radio" name="type" checked id="isSelf" ><label>Sim</label>
+               <input type="radio" name="type" id="noSelf" ><label>não</label></p>
+        <div>
+            <button type="button" class="btns" onclick="saveRest()">Salvar</button>
+            <button type="button" class="btns">Cancelar</button>
+        </div>
+    </form>
+</body>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+<script src="../firebaseCamp.js"></script>
+<script src="rest.js"></script>
+<script src="../loading.js"></script>
+</html>

@@ -1,5 +1,7 @@
 body {
     height: 100vh;
+    margin: 0px;
+    background-color: #30292F;
 }
 .btns {
     margin-top: 20px;

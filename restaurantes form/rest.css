@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    background-color: #30292F;
+}
+input[type="radio"] {
+    height: 14px;
+}
+p {
+    color: white;
+    font-size: 18px;
+}
