@@ -19,7 +19,7 @@ body{
   }
   
   #logo {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
   }
   
@@ -114,8 +114,11 @@ body{
   justify-content: center;
 }
 #restaurantes {
-  background-color: rgb(152, 160, 160);
   text-align: center;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 p {
   margin: 4px 0; 
@@ -133,9 +136,33 @@ p {
 button.danger {
   width: auto;
   float: right;
-  display: none;
+  visibility: hidden;
 }
 ul li:hover button.danger{
-  display: block;
+  visibility: visible; 
 }
+.cardContainer {
+  background-color: #dd3f238f;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.TextContent {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+.imgCard {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+
+
     

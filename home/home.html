@@ -10,7 +10,7 @@
 </head>
 <body>
     <header id="header">
-        <a id="logo" href="">Foto</a>
+        <a class="user" id="logo" href=""></a>
         <nav id="nav">
           <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
             <span id="hamburger"></span>
@@ -22,16 +22,18 @@
           </ul>
         </nav>
       </header>
-      <ul id="restaurantes">
+      <ul id="restaurantes" class="card-container">
         
       </ul>
       <a href="../restaurantes form/rest.html"><button type="button" class="restRegister fixed bottom right">add</button></a>
+      <button type="button" class="Logout fixed bottom left" onclick="userLogout()" >Logout</button>
 </body>
 
 
 
 <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-storage-compat.js"></script>
 <script src="../firebaseCamp.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
 <script src="home.js"></script>

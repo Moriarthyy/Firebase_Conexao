@@ -1,3 +1,5 @@
+//login com o google
+
 function loginWithGoogle() {
     const googleProvider = new firebase.auth.GoogleAuthProvider();
 

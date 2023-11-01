@@ -107,3 +107,19 @@ button[disabled]{
 .restRegister.right {
     right: 32px;
 }
+.Logout {
+    width: 54px;
+    height: 54px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 2px 2px 2px gray; 
+}   
+.Logout.fixed {
+    position: fixed;
+}
+.Logout.bottom {
+    bottom: 32px;
+}
+.Logout.left {
+    left: 32px;
+}

@@ -19,7 +19,7 @@ function isEmailValid() {
     return validateEmail(email)
     // tem como deixar isso em apenas 1 linha com operador térnario
 }
-
+// verifica se a password é valida 
 function isPasswordValid() {
     const password = form.password().value
     if (!password) {
@@ -28,7 +28,7 @@ function isPasswordValid() {
     return true
     // tem como deixar isso em apenas 1 linha com operador térnario
 }
-//function de login verifica se tem o login para logar 
+//function de login verifica se existe esse usuário no banco de dados
 function login() {
     showLoading()
     firebase.auth().signInWithEmailAndPassword(form.email().value,form.password().value).then(response => {
@@ -49,6 +49,7 @@ function errorMessage(error) {
     }
     return error.message
 }
+//ao clicar no botão registrar vai pra aba de registro
 function register() {
     window.location.href = "register/register.html"
 }
@@ -74,12 +75,3 @@ function toggleLoginButton() {
     const loginButton = form.loginButton();
     loginButton.disabled = !isEmailValid() || !isPasswordValid();
 }
-
-//isso não tá funcionando mas na teoria é pra logar o usuario automaticamente
-firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
-        window.location.href = "home/home.html"
-    }else{
-        alert("usuario não existe.")
-    }
-})

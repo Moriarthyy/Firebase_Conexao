@@ -21,13 +21,18 @@
                <input type="radio" name="type" id="noSelf" ><label>não</label></p>
         <div>
             <button type="button" class="btns" onclick="saveRest()">Salvar</button>
-            <button type="button" class="btns">Cancelar</button>
+            <a href="../home/home.html"><button type="button" class="btns">Cancelar</button></a>
+        </div>
+        <div>
+            <label>Upload de Imagem</label>
+            <input type="file" name="" accept="image/*"  id="filesImg">
         </div>
     </form>
 </body>
 <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-storage-compat.js"></script>
 <script src="../firebaseCamp.js"></script>
 <script src="rest.js"></script>
 <script src="../loading.js"></script>
